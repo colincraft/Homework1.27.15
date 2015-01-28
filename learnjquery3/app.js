@@ -9,6 +9,6 @@ $("body").on("click", "li", function(e){
 	$(this).toggleClass("completed");
 	});
 $("body").on("click", "button", function(e){
-	$("li:focus").remove();
+	$(this).parent("li").remove();
 	});
 });
